@@ -1,0 +1,29 @@
+﻿@page
+
+@model Proyectoint.Pages.InicioModel
+@{
+    ViewData["Title"] = "Inicio";
+}
+
+<div class="conteiner p-4">
+    <div class="row">
+        <div class="col-md-4 mx-auto">
+            <div class="card text-center">
+                <div class="card-header">
+                    <h3>Iniciar Sesion</h3>
+                </div>
+                <div class="card-body">
+                    <form method="post">
+                        <div class="form-group">
+                      
+                            <input asp-for="Usuario" placeholder="Usuario" class="form-group" />
+                            <br />
+                        
+                            <input asp-for="Contraseña" placeholder="Contraseña" class="form-group" />
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
