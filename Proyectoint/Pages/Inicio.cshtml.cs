@@ -11,6 +11,7 @@ namespace Proyectoint.Pages
     {
         [BindProperty]
         public string Usuario { get; set; }
+        [BindProperty]
         public string Contraseña { get; set; }
 
 
