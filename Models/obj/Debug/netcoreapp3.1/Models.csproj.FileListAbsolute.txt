@@ -1,0 +1,9 @@
+C:\Users\Ata\Desktop\Proyecto integrador\Models\bin\Debug\netcoreapp3.1\Models.deps.json
+C:\Users\Ata\Desktop\Proyecto integrador\Models\bin\Debug\netcoreapp3.1\Models.dll
+C:\Users\Ata\Desktop\Proyecto integrador\Models\obj\Debug\netcoreapp3.1\Models.csprojAssemblyReference.cache
+C:\Users\Ata\Desktop\Proyecto integrador\Models\obj\Debug\netcoreapp3.1\Models.AssemblyInfoInputs.cache
+C:\Users\Ata\Desktop\Proyecto integrador\Models\obj\Debug\netcoreapp3.1\Models.AssemblyInfo.cs
+C:\Users\Ata\Desktop\Proyecto integrador\Models\bin\Debug\netcoreapp3.1\Models.pdb
+C:\Users\Ata\Desktop\Proyecto integrador\Models\obj\Debug\netcoreapp3.1\Models.dll
+C:\Users\Ata\Desktop\Proyecto integrador\Models\obj\Debug\netcoreapp3.1\Models.pdb
+C:\Users\Ata\Desktop\Proyecto integrador\Models\obj\Debug\netcoreapp3.1\Models.csproj.ResolveComReference.cache

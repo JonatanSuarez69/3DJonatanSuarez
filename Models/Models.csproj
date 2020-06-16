@@ -1,7 +1,21 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
+
+  <ItemGroup>
+    <COMReference Include="{f1e41b5f-8f5b-4617-acd5-40d2775aa78b}">
+      <Guid>f1e41b5f-8f5b-4617-acd5-40d2775aa78b</Guid>
+      <VersionMajor>15</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <WrapperTool>tlbimp</WrapperTool>
+    </COMReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.5" />
+    <PackageReference Include="Microsoft.Extensions.Logging" Version="3.1.5" />
+  </ItemGroup>
 
 </Project>
