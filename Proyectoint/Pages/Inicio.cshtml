@@ -1,8 +1,6 @@
 ﻿@page
-
-@model Proyectoint.Pages.InicioModel
 @{
-    ViewData["Title"] = "Inicio";
+    Layout = null;
 }
 
 <!DOCTYPE html>
@@ -11,9 +9,6 @@
 <head>
     <meta charset="utf-8" />
     <title>Login</title>
-
-    <link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="~/css/site.css" rel="stylesheet" />
 
 
 </head>
@@ -25,7 +20,7 @@
                 <input id="txtUsuario" type="text" placeholder="Nombre de usuario" />
                 <label>Contraseña</label>
                 <input id="txtContraseña" type="password" placeholder="Contraseña" />
-                <button type="button" class="btn-success" id="btnEntrar">Entrar</button>
+                <button class="btn btn-primary" asp-page="/Index">Entrar</button>
             </form>
 
         </div>

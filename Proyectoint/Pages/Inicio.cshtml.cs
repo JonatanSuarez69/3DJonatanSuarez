@@ -9,11 +9,13 @@ namespace Proyectoint.Pages
 {
     public class InicioModel : PageModel
     {
-        [BindProperty]
-        public string Usuario { get; set; }
-        [BindProperty]
-        public string Contraseña { get; set; }
 
+        public int Id_Usuarios { get; set; }
+     
+        public string Nombre_Usuario { get; set; }
+        
+        
+        public string Contraseña { get; set; }
 
         public void OnGet()
         {
