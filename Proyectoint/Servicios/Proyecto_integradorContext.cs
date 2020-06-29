@@ -17,6 +17,7 @@ namespace Proyectoint.Models
 
         public virtual DbSet<Usuarios> Usuarios { get; set; }
 
+
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             if (!optionsBuilder.IsConfigured)
