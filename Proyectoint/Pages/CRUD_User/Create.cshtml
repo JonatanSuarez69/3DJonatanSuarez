@@ -1,0 +1,39 @@
+﻿@page
+@model Proyectoint.CreateUser
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>Usuarios</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Usuarios.Nombre_Usuario" class="control-label"></label>
+                <input asp-for="Usuarios.Nombre_Usuario" class="form-control" />
+                <span asp-validation-for="Usuarios.Nombre_Usuario" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Usuarios.Contraseña" class="control-label"></label>
+                <input asp-for="Usuarios.Contraseña" class="form-control" />
+                <span asp-validation-for="Usuarios.Contraseña" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="Users">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

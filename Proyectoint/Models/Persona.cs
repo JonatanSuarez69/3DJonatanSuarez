@@ -9,7 +9,8 @@ namespace Proyectoint.Models
 {
    
     public class Persona 
-    {
+    {  
+        [Key]
         [Required(ErrorMessage = "Se requiere el primer nombre")]
         [MinLength(4, ErrorMessage ="El primer nombre debe tener al menos 4 letras")]
         [Display(Name ="Nombre",Prompt ="Nombre")]

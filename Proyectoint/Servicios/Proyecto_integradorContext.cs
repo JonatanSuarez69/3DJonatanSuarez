@@ -23,7 +23,7 @@ namespace Proyectoint.Models
             if (!optionsBuilder.IsConfigured)
             {
 
-                optionsBuilder.UseSqlServer("Data Source=ATALIA;Initial Catalog=Proyecto_integrador;User ID=Jonatan3D;Password=Solovino000;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
+               // optionsBuilder.UseSqlServer("Data Source=ATALIA;Initial Catalog=Proyecto_integrador;User ID=Jonatan3D;Password=Solovino000;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
             }
         }
 
@@ -31,15 +31,15 @@ namespace Proyectoint.Models
         {
             modelBuilder.Entity<Usuarios>(entity =>
             {
-                entity.HasKey(e => e.IdUsuario);
+                entity.HasKey(e => e.Id_usuario);
 
-                entity.Property(e => e.IdUsuario).HasColumnName("Id_usuario");
+                entity.Property(e => e.Id_usuario).HasColumnName("Id_usuario");
 
                 entity.Property(e => e.Contraseña)
                     .IsRequired()
                     .HasMaxLength(50);
 
-                entity.Property(e => e.NombreUsuario)
+                entity.Property(e => e.Nombre_Usuario)
                     .IsRequired()
                     .HasColumnName("Nombre_Usuario")
                     .HasMaxLength(50);

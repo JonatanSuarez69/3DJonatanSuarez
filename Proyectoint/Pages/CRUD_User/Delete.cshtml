@@ -1,0 +1,34 @@
+﻿@page
+@model Proyectoint.DeleteUser
+
+@{
+    ViewData["Title"] = "Borrar usuario";
+}
+
+<h1>Delete</h1>
+
+<h3>Esta suguro de borrar al usuario?</h3>
+<div>
+    <h4>Usuarios</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Usuarios.Nombre_Usuario)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Usuarios.Nombre_Usuario)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Usuarios.Contraseña)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Usuarios.Contraseña)
+        </dd>
+    </dl>
+    
+    <form method="post">
+        <input type="hidden" asp-for="Usuarios.Id_usuario" />
+        <input type="submit" value="Delete" class="btn btn-danger" /> |
+        <a asp-page="./Users">Back to List</a>
+    </form>
+</div>

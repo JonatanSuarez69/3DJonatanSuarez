@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -10,6 +10,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Proyectoint.Models;
+using Proyectoint.Data;
 
 namespace Proyectoint
 {
@@ -27,7 +28,19 @@ namespace Proyectoint
         {
             services.AddRazorPages();
 
-            services.AddDbContext<Proyecto_integradorContext>(options => options.UseSqlServer(Configuration.GetConnectionString("Conexion")));
+            services.AddDbContext<Proyecto_integradorContext>(options => options.UseSqlServer(Configuration.GetConnectionString("PersonaContext")));
+
+            services.AddDbContext<PersonaContext>(options =>
+                    options.UseSqlServer(Configuration.GetConnectionString("PersonaContext")));
+
+            services.AddDbContext<UsuariosContext>(options =>
+                    options.UseSqlServer(Configuration.GetConnectionString("UsuariosContext")));
+
+            services.AddDbContext<CandidatoContext>(options =>
+                    options.UseSqlServer(Configuration.GetConnectionString("CandidatoContext")));
+
+            services.AddDbContext<EmpresaContext>(options =>
+                    options.UseSqlServer(Configuration.GetConnectionString("EmpresaContext")));
 
         }
 

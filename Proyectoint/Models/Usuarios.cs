@@ -9,9 +9,9 @@ namespace Proyectoint.Models
     public partial class Usuarios
     {
         [Key]
-        public int IdUsuario { get; set; }
+        public int Id_usuario { get; set; }
         [Display(Name ="Nombre de usuario")]
-        public string NombreUsuario { get; set; }
+        public string Nombre_Usuario { get; set; }
         [Display(Name = "Contraseña")]
         [DataType(DataType.Password)]
         public string Contraseña { get; set; }

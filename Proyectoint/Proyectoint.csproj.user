@@ -13,5 +13,6 @@
     <WebStackScaffolding_ViewDialogWidth>600</WebStackScaffolding_ViewDialogWidth>
     <WebStackScaffolding_DbContextDialogWidth>600</WebStackScaffolding_DbContextDialogWidth>
     <WebStackScaffolding_LayoutPageFile />
+    <WebStackScaffolding_DbContextTypeFullName>Proyectoint.Data.EmpresaContext</WebStackScaffolding_DbContextTypeFullName>
   </PropertyGroup>
 </Project>
