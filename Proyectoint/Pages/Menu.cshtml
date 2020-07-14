@@ -3,32 +3,33 @@
 @{
 }
 
-    <div class="card-deck">
-        <div class="card">
-            <div class="card-body">
-                <h5 class="card-title">Registrar Candidato</h5>
-                <p class="card-text">Aqui se veran los candidatos</p>
-            </div>
-            <div class="card-footer">
-                <a asp-page="/CRUD_Candidato/Index" class="btn btn-primary">Seleccionar</a>
-            </div>
+<div class="card-deck">
+    <div class="card">
+        <img src="C:\Users\Ata\Desktop\Proyecto integrador\Proyectoint\Images\user_icon_004.jpg" />
+        <div class="card-body">
+            <h5 class="card-title">Candidatos</h5>
+            <p class="card-text">Aqui se veran los candidatos</p>
         </div>
-        <div class="card">
-            <div class="card-body">
-                <h5 class="card-title">Usuarios</h5>
-                <p class="card-text">Aqui se encontraran los usuarios</p>
-            </div>
-            <div class="card-footer">
-                <a asp-page="/CRUD_User/Users" class="btn btn-primary">Seleccionar</a>
-            </div>
-        </div>
-        <div class="card">
-            <div class="card-body">
-                <h5 class="card-title">Empresas</h5>
-                <p class="card-text">Lista de Empresa para las que laboramos</p>
-            </div>
-            <div class="card-footer">
-                <a asp-page="/CRUD_Empresa/Index" class="btn btn-primary">Seleccionar</a>
-            </div>
+        <div class="card-footer">
+            <a asp-page="/CRUD_Candidato/Index" class="btn btn-primary">Seleccionar</a>
         </div>
     </div>
+    <div class="card">
+        <div class="card-body">
+            <h5 class="card-title">Usuarios</h5>
+            <p class="card-text">Aqui se encontraran los usuarios</p>
+        </div>
+        <div class="card-footer">
+            <a asp-page="/CRUD_User/Users" class="btn btn-primary">Seleccionar</a>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-body">
+            <h5 class="card-title">Empresas</h5>
+            <p class="card-text">Lista de Empresa para las que laboramos</p>
+        </div>
+        <div class="card-footer">
+            <a asp-page="/CRUD_Empresa/Index" class="btn btn-primary">Seleccionar</a>
+        </div>
+    </div>
+</div>

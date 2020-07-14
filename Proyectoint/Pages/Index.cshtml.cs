@@ -9,6 +9,11 @@ namespace Proyectoint
 {
     public class IndexModel : PageModel
     {
+
+        public string Nombre_Usuario { get; set; }
+        
+        public string Contraseña { get; set; }
+
         public void OnGet()
         {
 
