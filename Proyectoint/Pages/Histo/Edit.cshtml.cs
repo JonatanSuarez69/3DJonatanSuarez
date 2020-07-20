@@ -11,28 +11,28 @@ using Proyectoint.Models;
 
 namespace Proyectoint
 {
-    public class EditHisto : PageModel
+    public class EditLabo : PageModel
     {
-        private readonly Proyectoint.Data.Historial1Context _context;
+        private readonly Proyectoint.Data.LaboralContext _context;
 
-        public EditHisto(Proyectoint.Data.Historial1Context context)
+        public EditLabo(Proyectoint.Data.LaboralContext context)
         {
             _context = context;
         }
 
         [BindProperty]
-        public Historial1 Historial1 { get; set; }
+        public Laboral Laboral { get; set; }
 
-        public async Task<IActionResult> OnGetAsync(int? id)
+        public async Task<IActionResult> OnGetAsync(string id)
         {
             if (id == null)
             {
                 return NotFound();
             }
 
-            Historial1 = await _context.Historial1.FirstOrDefaultAsync(m => m.id_histo == id);
+            Laboral = await _context.Laboral.FirstOrDefaultAsync(m => m.Empresa == id);
 
-            if (Historial1 == null)
+            if (Laboral == null)
             {
                 return NotFound();
             }
@@ -48,7 +48,7 @@ namespace Proyectoint
                 return Page();
             }
 
-            _context.Attach(Historial1).State = EntityState.Modified;
+            _context.Attach(Laboral).State = EntityState.Modified;
 
             try
             {
@@ -56,7 +56,7 @@ namespace Proyectoint
             }
             catch (DbUpdateConcurrencyException)
             {
-                if (!Historial1Exists(Historial1.id_histo))
+                if (!LaboralExists(Laboral.Empresa))
                 {
                     return NotFound();
                 }
@@ -69,9 +69,9 @@ namespace Proyectoint
             return RedirectToPage("./Index");
         }
 
-        private bool Historial1Exists(int id)
+        private bool LaboralExists(string id)
         {
-            return _context.Historial1.Any(e => e.id_histo == id);
+            return _context.Laboral.Any(e => e.Empresa == id);
         }
     }
 }

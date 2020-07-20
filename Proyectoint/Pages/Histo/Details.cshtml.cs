@@ -10,27 +10,27 @@ using Proyectoint.Models;
 
 namespace Proyectoint
 {
-    public class DetailsHisto : PageModel
+    public class DetailLabo : PageModel
     {
-        private readonly Proyectoint.Data.Historial1Context _context;
+        private readonly Proyectoint.Data.LaboralContext _context;
 
-        public DetailsHisto(Proyectoint.Data.Historial1Context context)
+        public DetailLabo(Proyectoint.Data.LaboralContext context)
         {
             _context = context;
         }
 
-        public Historial1 Historial1 { get; set; }
+        public Laboral Laboral { get; set; }
 
-        public async Task<IActionResult> OnGetAsync(int? id)
+        public async Task<IActionResult> OnGetAsync(string id)
         {
             if (id == null)
             {
                 return NotFound();
             }
 
-            Historial1 = await _context.Historial1.FirstOrDefaultAsync(m => m.id_histo == id);
+            Laboral = await _context.Laboral.FirstOrDefaultAsync(m => m.Empresa == id);
 
-            if (Historial1 == null)
+            if (Laboral == null)
             {
                 return NotFound();
             }

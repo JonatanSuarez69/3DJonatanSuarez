@@ -1,0 +1,60 @@
+﻿@page
+@model Proyectoint.EditLabo
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>Laboral</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Laboral.Nombre" class="control-label"></label>
+                <input asp-for="Laboral.Nombre" class="form-control" />
+                <span asp-validation-for="Laboral.Nombre" class="text-danger"></span>
+            </div>
+            <input type="hidden" asp-for="Laboral.Empresa" />
+            <div class="form-group">
+                <label asp-for="Laboral.Direc" class="control-label"></label>
+                <input asp-for="Laboral.Direc" class="form-control" />
+                <span asp-validation-for="Laboral.Direc" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Laboral.Razon" class="control-label"></label>
+                <input asp-for="Laboral.Razon" class="form-control" />
+                <span asp-validation-for="Laboral.Razon" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Laboral.PuestoAnt" class="control-label"></label>
+                <input asp-for="Laboral.PuestoAnt" class="form-control" />
+                <span asp-validation-for="Laboral.PuestoAnt" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Laboral.InicioLabo" class="control-label"></label>
+                <input asp-for="Laboral.InicioLabo" class="form-control" />
+                <span asp-validation-for="Laboral.InicioLabo" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Laboral.FinLABO" class="control-label"></label>
+                <input asp-for="Laboral.FinLABO" class="form-control" />
+                <span asp-validation-for="Laboral.FinLABO" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="./Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

@@ -10,46 +10,46 @@ using Proyectoint.Models;
 
 namespace Proyectoint
 {
-    public class DeleteHisto : PageModel
+    public class DeleteLabo : PageModel
     {
-        private readonly Proyectoint.Data.Historial1Context _context;
+        private readonly Proyectoint.Data.LaboralContext _context;
 
-        public DeleteHisto(Proyectoint.Data.Historial1Context context)
+        public DeleteLabo(Proyectoint.Data.LaboralContext context)
         {
             _context = context;
         }
 
         [BindProperty]
-        public Historial1 Historial1 { get; set; }
+        public Laboral Laboral { get; set; }
 
-        public async Task<IActionResult> OnGetAsync(int? id)
+        public async Task<IActionResult> OnGetAsync(string id)
         {
             if (id == null)
             {
                 return NotFound();
             }
 
-            Historial1 = await _context.Historial1.FirstOrDefaultAsync(m => m.id_histo == id);
+            Laboral = await _context.Laboral.FirstOrDefaultAsync(m => m.Empresa == id);
 
-            if (Historial1 == null)
+            if (Laboral == null)
             {
                 return NotFound();
             }
             return Page();
         }
 
-        public async Task<IActionResult> OnPostAsync(int? id)
+        public async Task<IActionResult> OnPostAsync(string id)
         {
             if (id == null)
             {
                 return NotFound();
             }
 
-            Historial1 = await _context.Historial1.FindAsync(id);
+            Laboral = await _context.Laboral.FindAsync(id);
 
-            if (Historial1 != null)
+            if (Laboral != null)
             {
-                _context.Historial1.Remove(Historial1);
+                _context.Laboral.Remove(Laboral);
                 await _context.SaveChangesAsync();
             }
 

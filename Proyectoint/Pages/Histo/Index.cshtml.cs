@@ -10,20 +10,20 @@ using Proyectoint.Models;
 
 namespace Proyectoint
 {
-    public class ModelHisto : PageModel
+    public class ModelLabo : PageModel
     {
-        private readonly Proyectoint.Data.Historial1Context _context;
+        private readonly Proyectoint.Data.LaboralContext _context;
 
-        public ModelHisto(Proyectoint.Data.Historial1Context context)
+        public ModelLabo(Proyectoint.Data.LaboralContext context)
         {
             _context = context;
         }
 
-        public IList<Historial1> Historial1 { get;set; }
+        public IList<Laboral> Laboral { get;set; }
 
         public async Task OnGetAsync()
         {
-            Historial1 = await _context.Historial1.ToListAsync();
+            Laboral = await _context.Laboral.ToListAsync();
         }
     }
 }

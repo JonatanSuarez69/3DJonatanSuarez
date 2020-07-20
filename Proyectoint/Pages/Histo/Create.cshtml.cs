@@ -10,11 +10,11 @@ using Proyectoint.Models;
 
 namespace Proyectoint
 {
-    public class CreateHisto : PageModel
+    public class CreateLabo : PageModel
     {
-        private readonly Proyectoint.Data.Historial1Context _context;
+        private readonly Proyectoint.Data.LaboralContext _context;
 
-        public CreateHisto(Proyectoint.Data.Historial1Context context)
+        public CreateLabo(Proyectoint.Data.LaboralContext context)
         {
             _context = context;
         }
@@ -25,7 +25,7 @@ namespace Proyectoint
         }
 
         [BindProperty]
-        public Historial1 Historial1 { get; set; }
+        public Laboral Laboral { get; set; }
 
         // To protect from overposting attacks, enable the specific properties you want to bind to, for
         // more details, see https://aka.ms/RazorPagesCRUD.
@@ -36,7 +36,7 @@ namespace Proyectoint
                 return Page();
             }
 
-            _context.Historial1.Add(Historial1);
+            _context.Laboral.Add(Laboral);
             await _context.SaveChangesAsync();
 
             return RedirectToPage("./Index");

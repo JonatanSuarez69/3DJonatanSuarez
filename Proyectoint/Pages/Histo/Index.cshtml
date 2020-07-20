@@ -1,0 +1,66 @@
+﻿@page
+@model Proyectoint.ModelLabo
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-page="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Laboral[0].Nombre)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Laboral[0].Direc)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Laboral[0].Razon)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Laboral[0].PuestoAnt)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Laboral[0].InicioLabo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Laboral[0].FinLABO)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.Laboral) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nombre)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Direc)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Razon)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PuestoAnt)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.InicioLabo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FinLABO)
+            </td>
+            <td>
+                <a asp-page="./Edit" asp-route-id="@item.Empresa">Edit</a> |
+                <a asp-page="./Details" asp-route-id="@item.Empresa">Details</a> |
+                <a asp-page="./Delete" asp-route-id="@item.Empresa">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
