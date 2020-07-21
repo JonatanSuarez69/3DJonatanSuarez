@@ -7,13 +7,13 @@ using Proyectoint.Models;
 
 namespace Proyectoint.Data
 {
-    public class Historial1Context : DbContext
+    public class CandiContext : DbContext
     {
-        public Historial1Context (DbContextOptions<Historial1Context> options)
+        public CandiContext (DbContextOptions<CandiContext> options)
             : base(options)
         {
         }
 
-        public DbSet<Proyectoint.Models.Historial1> Historial1 { get; set; }
+        public DbSet<Proyectoint.Models.Candi> Candi { get; set; }
     }
 }

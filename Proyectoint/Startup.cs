@@ -42,11 +42,14 @@ namespace Proyectoint
             services.AddDbContext<EmpresaContext>(options =>
                     options.UseSqlServer(Configuration.GetConnectionString("EmpresaContext")));
 
-            services.AddDbContext<Historial1Context>(options =>
-                    options.UseSqlServer(Configuration.GetConnectionString("Historial1Context")));
+            //services.AddDbContext<Historial1Context>(options =>
+                   // options.UseSqlServer(Configuration.GetConnectionString("Historial1Context")));
 
             services.AddDbContext<LaboralContext>(options =>
                     options.UseSqlServer(Configuration.GetConnectionString("LaboralContext")));
+
+            services.AddDbContext<CandiContext>(options =>
+                    options.UseSqlServer(Configuration.GetConnectionString("CandiContext")));
 
         }
 

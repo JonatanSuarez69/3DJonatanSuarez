@@ -1,0 +1,64 @@
+﻿@page
+@model Proyectoint.Pages.Candidato.CreateModel
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>Candi</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Candi.Nombre_Completo" class="control-label"></label>
+                <input asp-for="Candi.Nombre_Completo" class="form-control" />
+                <span asp-validation-for="Candi.Nombre_Completo" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Candi.Sexo" class="control-label"></label>
+                <input asp-for="Candi.Sexo" class="form-control" />
+                <span asp-validation-for="Candi.Sexo" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Candi.Cumple" class="control-label"></label>
+                <input asp-for="Candi.Cumple" class="form-control" />
+                <span asp-validation-for="Candi.Cumple" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Candi.Est_civ" class="control-label"></label>
+                <input asp-for="Candi.Est_civ" class="form-control" />
+                <span asp-validation-for="Candi.Est_civ" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Candi.Nacionalidad" class="control-label"></label>
+                <input asp-for="Candi.Nacionalidad" class="form-control" />
+                <span asp-validation-for="Candi.Nacionalidad" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Candi.Curp" class="control-label"></label>
+                <input asp-for="Candi.Curp" class="form-control" />
+                <span asp-validation-for="Candi.Curp" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Candi.Referencia" class="control-label"></label>
+                <input asp-for="Candi.Referencia" class="form-control" />
+                <span asp-validation-for="Candi.Referencia" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
