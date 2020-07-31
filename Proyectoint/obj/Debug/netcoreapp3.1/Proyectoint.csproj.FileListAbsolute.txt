@@ -167,7 +167,6 @@ C:\Users\Ata\Desktop\Proyecto integrador\Proyectoint\bin\Debug\netcoreapp3.1\run
 C:\Users\Ata\Desktop\Proyecto integrador\Proyectoint\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\e_sqlite3.dll
 C:\Users\Ata\Desktop\Proyecto integrador\Proyectoint\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\e_sqlite3.dll
 C:\Users\Ata\Desktop\Proyecto integrador\Proyectoint\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\e_sqlite3.dll
-C:\Users\Ata\Desktop\Proyecto integrador\Proyectoint\obj\Debug\netcoreapp3.1\Proyectoint.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\Ata\Desktop\Proyecto integrador\Proyectoint\obj\Debug\netcoreapp3.1\Razor\Pages\Inicio.cshtml.g.cs
 C:\Users\Ata\Desktop\Proyecto integrador\Proyectoint\obj\Debug\netcoreapp3.1\Razor\Pages\CRUD_User\Create.cshtml.g.cs
 C:\Users\Ata\Desktop\Proyecto integrador\Proyectoint\obj\Debug\netcoreapp3.1\Razor\Pages\CRUD_User\Delete.cshtml.g.cs
@@ -192,7 +191,6 @@ C:\Users\Ata\Desktop\Proyecto integrador\Proyectoint\obj\Debug\netcoreapp3.1\Raz
 C:\Users\Ata\Desktop\Proyecto integrador\Proyectoint\obj\Debug\netcoreapp3.1\Razor\Pages\Histo\Details.cshtml.g.cs
 C:\Users\Ata\Desktop\Proyecto integrador\Proyectoint\obj\Debug\netcoreapp3.1\Razor\Pages\Histo\Edit.cshtml.g.cs
 C:\Users\Ata\Desktop\Proyecto integrador\Proyectoint\obj\Debug\netcoreapp3.1\Razor\Pages\Histo\Index.cshtml.g.cs
-C:\Users\Ata\Desktop\Proyecto integrador\Proyectoint\obj\Debug\netcoreapp3.1\Proyectoint.csproj.CoreCompileInputs.cache
 C:\Users\Ata\Desktop\Proyecto integrador\Proyectoint\obj\Debug\netcoreapp3.1\Proyectoint.genruntimeconfig.cache
 C:\Users\Ata\Desktop\Proyecto integrador\Proyectoint\bin\Debug\netcoreapp3.1\Properties\serviceDependencies.json
 C:\Users\Ata\Desktop\Proyecto integrador\Proyectoint\bin\Debug\netcoreapp3.1\Properties\serviceDependencies.local.json
@@ -201,3 +199,7 @@ C:\Users\Ata\Desktop\Proyecto integrador\Proyectoint\obj\Debug\netcoreapp3.1\Raz
 C:\Users\Ata\Desktop\Proyecto integrador\Proyectoint\obj\Debug\netcoreapp3.1\Razor\Pages\Candidato\Details.cshtml.g.cs
 C:\Users\Ata\Desktop\Proyecto integrador\Proyectoint\obj\Debug\netcoreapp3.1\Razor\Pages\Candidato\Edit.cshtml.g.cs
 C:\Users\Ata\Desktop\Proyecto integrador\Proyectoint\obj\Debug\netcoreapp3.1\Razor\Pages\Candidato\Index.cshtml.g.cs
+C:\Users\Ata\Desktop\Proyecto integrador\Proyectoint\bin\Debug\netcoreapp3.1\iTextSharp.LGPLv2.Core.dll
+C:\Users\Ata\Desktop\Proyecto integrador\Proyectoint\bin\Debug\netcoreapp3.1\BouncyCastle.Crypto.dll
+C:\Users\Ata\Desktop\Proyecto integrador\Proyectoint\obj\Debug\netcoreapp3.1\Proyectoint.csproj.CoreCompileInputs.cache
+C:\Users\Ata\Desktop\Proyecto integrador\Proyectoint\obj\Debug\netcoreapp3.1\Proyectoint.MvcApplicationPartsAssemblyInfo.cache

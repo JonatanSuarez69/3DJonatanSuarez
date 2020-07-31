@@ -71,6 +71,10 @@
             "Polly": {
               "target": "Package",
               "version": "[7.2.1, )"
+            },
+            "iTextSharp.LGPLv2.Core": {
+              "target": "Package",
+              "version": "[1.6.7, )"
             }
           },
           "imports": [
